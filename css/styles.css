@@ -1,0 +1,367 @@
+:root {
+  --black: #212121;
+  --gray: #757575;
+  --accent-color: #2196f3;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.header-logo-web {
+  color: var(--accent-color);
+}
+
+.header-nav-list,
+.header-contacts {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-link {
+  color: var(--black);
+}
+
+.header-contacts-link {
+  color: var(--gray);
+}
+
+.hero {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.main-section {
+  background: #2f303a;
+}
+
+.main-section-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-section-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.main-section-button:hover,
+.main-section-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+
+.about-us-header {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.about-us-description {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.what-we-do-header {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.team-header {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.team-member-name {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.team-member-position {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.footer-section {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.footer-logo-web {
+  color: var(--accent-color);
+}
+
+.footer-address {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.footer-contacts-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.project-name {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+
+.project-type {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.filter-button-all {
+  position: absolute;
+  width: 29px;
+  height: 26px;
+  left: 517px;
+  top: 180px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter-button-all:hover,
+.filter-button-all:focus {
+  background-color: var(--accent-color);
+}
+
+.filter-button-web {
+  position: absolute;
+  width: 84px;
+  height: 26px;
+  left: 598px;
+  top: 180px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter-button-web:hover,
+.filter-button-web:focus {
+  background-color: var(--accent-color);
+}
+
+.filter-button-app {
+  position: absolute;
+  width: 101px;
+  height: 26px;
+  left: 734px;
+  top: 180px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter-button-app:hover,
+.filter-button-app:focus {
+  background-color: var(--accent-color);
+}
+
+.filter-button-design {
+  position: absolute;
+  width: 59px;
+  height: 26px;
+  left: 887px;
+  top: 180px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter-button-design:hover,
+.filter-button-design:focus {
+  background-color: var(--accent-color);
+}
+
+.filter-button-marketing {
+  position: absolute;
+  width: 86px;
+  height: 26px;
+  left: 998px;
+  top: 180px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter-button-marketing:hover,
+.filter-button-marketing:focus {
+  background-color: var(--accent-color);
+}
