@@ -14,6 +14,35 @@ html {
   --accent-color: #2196f3;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -253,10 +282,13 @@ a {
 
 .filter-button-all {
   position: absolute;
-  width: 29px;
-  height: 26px;
-  left: 517px;
-  top: 180px;
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
 
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -278,10 +310,13 @@ a {
 
 .filter-button-web {
   position: absolute;
-  width: 84px;
-  height: 26px;
-  left: 598px;
-  top: 180px;
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
 
   font-family: Roboto, sans-serif;
   font-weight: 500;
