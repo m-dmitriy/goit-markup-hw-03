@@ -168,14 +168,16 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
 
-  min-width: 200px;
-  padding: 10px 16px;
   border-radius: 4px;
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
 
+  display: flex;
+  box-sizing: content-box;
+  padding: 10px 32px;
   margin: 30px auto;
+  border: none;
 }
 
 .main-section-button:hover,
@@ -210,11 +212,24 @@ a {
 
 .about-us-list {
   display: flex;
+  box-sizing: content-box;
   position: absolute;
   width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 680px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about-us-container {
+  width: 270px;
+}
+
+.about-us-container:not(:last-child) {
+  margin-right: 30px;
 }
 
 .what-we-do-header {
@@ -226,6 +241,64 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-bottom: 50px;
+}
+
+.what-we-do-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+}
+
+.what-we-do-section {
+  position: absolute;
+  width: 1170px;
+  top: 969px;
+}
+
+.what-we-do-img {
+  display: flex;
+}
+
+.team-section {
+  position: absolute;
+  width: 100%;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background: #f5f4fa;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.team-list {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.team-member-card {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.team-member-card:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-member-name-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-header {
@@ -237,6 +310,10 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member-name {
@@ -250,6 +327,7 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .team-member-position {
@@ -266,7 +344,22 @@ a {
 }
 
 .footer-section {
+  position: absolute;
+  width: 100%;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
   background-color: #2f303a;
+}
+
+.footer-portfolio {
+  position: absolute;
+  width: 100%;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+
+  background: #2f303a;
 }
 
 .footer-logo {
@@ -284,6 +377,15 @@ a {
   color: var(--accent-color);
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-all {
+  margin-top: 60px;
+}
+
 .footer-address {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -294,6 +396,15 @@ a {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+  margin-top: 20px;
+}
+
+.footer-mail {
+  margin-top: 10px;
+}
+
+.footer-tel {
+  margin-top: 10px;
 }
 
 .footer-contacts-link {
@@ -337,142 +448,123 @@ a {
   color: #757575;
 }
 
-.filter-button-all {
-  position: absolute;
-  width: 73px;
-  height: 38px;
-  left: 495px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-
+.buttons-list {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
-
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
   cursor: pointer;
+}
+
+.filter-button-all {
+  position: absolute;
+  border: 0px;
+  top: 174px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  box-sizing: content-box;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 
 .filter-button-all:hover,
 .filter-button-all:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .filter-button-web {
   position: absolute;
-  width: 128px;
-  height: 38px;
-  left: 576px;
+  border: 0px;
   top: 174px;
 
   background: #f5f4fa;
   border-radius: 4px;
-
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  cursor: pointer;
+  display: flex;
+  box-sizing: content-box;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 
 .filter-button-web:hover,
 .filter-button-web:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .filter-button-app {
   position: absolute;
-  width: 145px;
-  height: 38px;
-  left: 712px;
+  border: 0px;
   top: 174px;
 
   background: #f5f4fa;
   border-radius: 4px;
-
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  cursor: pointer;
+  display: flex;
+  box-sizing: content-box;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 
 .filter-button-app:hover,
 .filter-button-app:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .filter-button-design {
   position: absolute;
-  width: 103px;
-  height: 38px;
-  left: 865px;
+  border: 0px;
   top: 174px;
 
   background: #f5f4fa;
   border-radius: 4px;
-
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  cursor: pointer;
+  display: flex;
+  box-sizing: content-box;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 
 .filter-button-design:hover,
 .filter-button-design:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .filter-button-marketing {
   position: absolute;
-  width: 130px;
-  height: 38px;
-  left: 976px;
+  border: 0px;
   top: 174px;
 
   background: #f5f4fa;
   border-radius: 4px;
-
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  cursor: pointer;
+  display: flex;
+  box-sizing: content-box;
+  padding: 6px 22px;
 }
 
 .filter-button-marketing:hover,
 .filter-button-marketing:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
+}
+.projects-list {
+  top: 262px;
+  width: 1206px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project {
+  border: 1px solid #eeeeee;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
