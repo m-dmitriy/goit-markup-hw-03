@@ -66,6 +66,10 @@ a {
   text-decoration: none;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-logo {
   font-family: Raleway;
   font-weight: bold;
@@ -455,16 +459,19 @@ a {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 
   color: #212121;
   cursor: pointer;
 }
 
 .filter-button-all {
-  position: absolute;
   border: 0px;
-  top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -477,13 +484,12 @@ a {
 .filter-button-all:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button-web {
-  position: absolute;
   border: 0px;
-  top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -496,13 +502,12 @@ a {
 .filter-button-web:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button-app {
-  position: absolute;
   border: 0px;
-  top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -515,13 +520,12 @@ a {
 .filter-button-app:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button-design {
-  position: absolute;
   border: 0px;
-  top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -534,12 +538,12 @@ a {
 .filter-button-design:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button-marketing {
-  position: absolute;
   border: 0px;
-  top: 174px;
 
   background: #f5f4fa;
   border-radius: 4px;
@@ -552,6 +556,8 @@ a {
 .filter-button-marketing:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list {
   top: 262px;
@@ -560,11 +566,21 @@ a {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  margin-bottom: 0px;
 }
 
 .project {
   border: 1px solid #eeeeee;
   margin-left: 30px;
   margin-top: 30px;
+
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.project-description {
+  padding: 20px 24px;
+}
+
+.project-name {
+  margin-bottom: 4px;
 }
