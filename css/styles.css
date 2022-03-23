@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: inherit;
 }
 
@@ -46,9 +46,11 @@ address {
 }
 
 .header-container {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
-  height: 80px;
+
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -97,6 +99,9 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .header-nav-link:hover,
@@ -139,13 +144,10 @@ a {
 }
 
 .main-section {
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
   background: #2f303a;
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-section-description {
@@ -159,9 +161,8 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  padding-bottom: 30px;
 }
 
 .main-section-button {
@@ -177,11 +178,12 @@ a {
   background-color: #2196f3;
   cursor: pointer;
 
-  display: flex;
-  box-sizing: content-box;
+  display: block;
   padding: 10px 32px;
-  margin: 30px auto;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50px;
 }
 
 .main-section-button:hover,
@@ -190,6 +192,11 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.about-us-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-us-header {
@@ -201,6 +208,7 @@ a {
   text-transform: uppercase;
 
   color: #212121;
+  padding-bottom: 10px;
 }
 
 .about-us-description {
@@ -216,14 +224,6 @@ a {
 
 .about-us-list {
   display: flex;
-  box-sizing: content-box;
-  position: absolute;
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 680px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -236,6 +236,10 @@ a {
   margin-right: 30px;
 }
 
+.what-we-do-section {
+  padding-bottom: 94px;
+}
+
 .what-we-do-header {
   font-family: Roboto, sans-serif;
   font-weight: bold;
@@ -245,44 +249,31 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
-  margin-bottom: 50px;
+  display: block;
+  padding-bottom: 50px;
 }
 
 .what-we-do-list {
   display: flex;
-  justify-content: space-between;
-  margin: 0%;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.what-we-do-section {
-  position: absolute;
-  width: 1170px;
-  top: 969px;
-}
-
-.what-we-do-img {
-  display: flex;
+.what-we-do-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-section {
-  position: absolute;
-  width: 100%;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
   background: #f5f4fa;
-  padding-left: auto;
-  padding-right: auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-list {
-  width: 1170px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .team-member-card {
@@ -300,11 +291,6 @@ a {
   margin-left: 30px;
 }
 
-.team-member-name-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .team-header {
   font-family: Roboto, sans-serif;
   font-weight: bold;
@@ -314,10 +300,7 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 50px;
 }
 
 .team-member-name {
@@ -332,6 +315,7 @@ a {
 
   color: #212121;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .team-member-position {
@@ -345,25 +329,11 @@ a {
   letter-spacing: 0.03em;
 
   color: #757575;
+  padding-bottom: 30px;
 }
 
 .footer-section {
-  position: absolute;
-  width: 100%;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
   background-color: #2f303a;
-}
-
-.footer-portfolio {
-  position: absolute;
-  width: 100%;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
-
-  background: #2f303a;
 }
 
 .footer-logo {
@@ -382,12 +352,8 @@ a {
 }
 
 .footer-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo-all {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-address {
@@ -463,7 +429,6 @@ a {
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 50px;
 
   color: #212121;
@@ -559,20 +524,19 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .projects-list {
-  top: 262px;
-  width: 1206px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: -27px;
+  margin-top: -27px;
   margin-bottom: 0px;
 }
 
 .project {
   border: 1px solid #eeeeee;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: 27px;
+  margin-top: 27px;
 
   flex-basis: calc((100% - 90px) / 3);
 }
@@ -583,4 +547,9 @@ a {
 
 .project-name {
   margin-bottom: 4px;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
