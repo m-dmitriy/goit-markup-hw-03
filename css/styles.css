@@ -27,6 +27,8 @@ ul {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 img {
@@ -563,21 +565,21 @@ a {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -27px;
-  margin-top: -27px;
-  margin-bottom: 0px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .project {
-  border: 1px solid #eeeeee;
-  margin-left: 27px;
-  margin-top: 27px;
+  margin-left: 30px;
+  margin-top: 30px;
 
   flex-basis: calc((100% - 90px) / 3);
 }
 
 .project-description {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project-name {
