@@ -419,23 +419,23 @@ a {
 }
 
 .buttons-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.filter-button-all {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-
   color: #212121;
   cursor: pointer;
-}
 
-.filter-button-all {
   border: 0px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -454,6 +454,15 @@ a {
 }
 
 .filter-button-web {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+
   border: 0px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -472,6 +481,15 @@ a {
 }
 
 .filter-button-app {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+
   border: 0px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -490,6 +508,15 @@ a {
 }
 
 .filter-button-design {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+
   border: 0px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -508,8 +535,16 @@ a {
 }
 
 .filter-button-marketing {
-  border: 0px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
 
+  border: 0px;
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
